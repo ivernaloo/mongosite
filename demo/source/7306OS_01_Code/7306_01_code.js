@@ -1,5 +1,5 @@
 $ mongo
-> db.contacts.find({email: ‘jason@kroltech.com’}).pretty()
+> db.contacts.find({email: jason@kroltech.com}).pretty()
 
 {
     "email" : "jason@kroltech.com",

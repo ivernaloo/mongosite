@@ -1,0 +1,23 @@
+{
+  "name": "mongosite",
+  "version": "1.0.0",
+  "description": "DIRECTIONS ======================== * For those code sections where there is a package.json file at root folder, please run the \"npm install\" command as the same would pull in the dependencies before running the \"node server.js\" to invoke the express instance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET DEBUG=*,-nodemon* && nodemon demo/c02.js --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivernaloo/mongosite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivernaloo/mongosite/issues"
+  },
+  "homepage": "https://github.com/ivernaloo/mongosite#readme",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "mongodb": "^2.2.25"
+  }
+}
