@@ -1,3 +1,4 @@
+/*
 $ mongo
 > db.contacts.find({email: jason@kroltech.com}).pretty()
 
@@ -11,4 +12,4 @@ $ mongo
         "last" : "Krol"
     },
     "__v" : 0
-}
+}*/
