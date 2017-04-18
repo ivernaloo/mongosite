@@ -1,4 +1,5 @@
-var path = require('path'),
+var fs = require('fs'),
+    path = require('path'),
     routes = require('./routes'),
     exphbs = require('express-handlebars'),
     express = require('express'),
@@ -30,6 +31,11 @@ module.exports = function(app) {
     app.set('view engine', 'handlebars'); // define template
 
     app.use(morgan('dev')); // log
+
+    app.use(bodyParser({
+        uploadDir:path.join(__dirname, 'public/upload/temp')
+    }));
+
     app.use(multer({ dest: path.join(__dirname, 'public/upload/temp')})); // handling multipart/form-data
 
     app.use(methodOverride()); // fix REST
